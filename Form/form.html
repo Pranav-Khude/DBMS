@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property</title>
+</head>
+<script src="form.js"></script>
+<style>
+    body {
+        margin: 0px;
+        background-color: #e09ef1;
+        
+    }
+    
+    .curve {
+        transition: translate 0.5s, width 0.5s;
+    }
+    
+    #background {
+        position: relative;
+        z-index: -1;
+    }
+    
+    #exit_button {
+        vertical-align: middle;
+        width: 40px;
+    }
+    
+
+    a {
+        width: fit-content;
+        text-decoration: none;
+        display: contents;
+        position: absolute;
+    }
+
+    .exit_button {
+        cursor: pointer;
+        margin: 0px;
+        position: absolute;
+        top: 3vw;
+        left: 3vw;
+        font-size: 3vw;
+        font-weight: bold;
+        text-align: center;
+        color: #CC5DE8;
+        text-shadow: 2px 1px #CC5DE8;
+        
+       
+    }
+    #add_button{
+        vertical-align: middle;
+        width: 40px;
+
+    }
+    .add_button{
+        cursor: pointer;
+
+        margin: 0px;
+        /* display: flex; */
+        position: absolute;
+        top: 3vw;
+        right: 3vw;
+        font-size: 3vw;
+        font-weight: bold;
+        text-align: center;
+        color: #CC5DE8;
+        
+
+    }
+    
+    /* CSS animation styleing */
+    
+    @keyframes scale {
+        0% {
+            -webkit-transform: scale(1);
+        }
+        100% {
+            transform: scale(0.989);
+            translate: 20px 20px;
+            filter: drop-shadow(1px 0px 3px black);
+        }
+    }
+  .Look{
+    width:500px;
+    /* margin: 1vw; */
+    display:inline-block;
+}
+.type{
+    /* margin: 1vw; */
+    width:500px;
+    
+}
+input[type=text] {
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #CC5DE8;
+}
+    
+    
+   
+  
+  
+    
+
+
+
+
+</style>
+
+<body>
+
+    <div class="curve">
+        <!-- <button onclick="pagechange()">Click here</button> -->
+
+        <svg viewBox="0 0 1280 351" id="background" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="Vector1" d="M1280 249.856C815.274 184.963 233.031 290.247 0 351V0H1280V249.856Z" fill="#F3CCFF" />
+            </svg>
+        
+            <p class="exit_button" onclick="pagechange()">
+                <img src="icons8-enter-80.png" alt="Exit" id="exit_button"> Back
+            </p>
+    </div>
+    <div class="main_block">
+        <img src="house.png" alt="house_image">
+    <form action="">
+    <div class="block1">
+        <h3>Looking for:</h3>
+        <div class="Look">
+            <button type="submit" class="msgBtn" onClick="return false;" >Sell</button>
+            <button type="submit" class="msgBtn2" onClick="return false;">Rent</button>
+            <button type="submit" class="msgBtn3" onClick="return false;">Lease</button>
+        </div>
+          
+        <h3>Type of property you have:</h3>
+        <div class="type">
+            <button type="submit" class="msgBtn" onClick="return false;" >Apartment/Flat</button>
+            <button type="submit" class="msgBtn2" onClick="return false;">Farmhouse</button>
+            <button type="submit" class="msgBtn3" onClick="return false;">House</button>
+        </div>
+
+    </div>
+
+    <div class="block2">
+        <div class="address">
+            <h3>Address:</h3>
+        
+       
+            <!-- <label for="fname">House/Flat No.,Name</label> -->
+            <input type="text" id="house" name="House" placeholder="House/Flat No.,Name">
+         <br>
+            <!-- <label for="lname">Locality</label> -->
+            <input type="text" id="locality" name="Locality" placeholder="Locality">
+        <br>
+            <!-- <label for="lname">Last Name</label> -->
+            <input type="text" id="city" name="City_State_Pincode" placeholder="City_State_Pincode">
+          
+            
+         
+        </div>
+
+        <div class="details">
+            <h3>Details:</h3>
+        
+        
+            <!-- <label for="fname">House/Flat No.,Name</label> -->
+            <input type="text" id="ownerName" name="Owner's Name" placeholder="Owner's Name">
+         <br>
+            <!-- <label for="lname">Locality</label> -->
+            <input type="text" id="contact" name="Contact No." placeholder="Contact No.">
+        <br>
+        
+        </div>
+        <div class="doc">
+             <label for=""><b>Documents:</b></label>
+             <br>
+             <input type="file" id="document" name="Documents" placeholder="Upload Documents here">
+        </div>
+        
+
+    </div>
+
+    <div class="block3">
+      <h2>More details about property:</h2>
+      <label for="lname">Locality</label>
+      <input type="text" id="contact" name="Contact No." placeholder="Contact No.">
+      
+      <input type="text" id="contact" name="Contact No." placeholder="Contact No.">
+      
+      <label for="lname">Locality</label>
+      <input type="text" id="contact" name="Contact No." placeholder="Contact No.">
+
+      <label for="lname">Locality</label>
+      <input type="text" id="contact" name="Contact No." placeholder="Contact No.">
+
+    </div>
+</div>
+</form>
+        
+</body>
+
+</html>
