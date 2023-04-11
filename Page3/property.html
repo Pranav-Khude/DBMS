@@ -105,7 +105,6 @@
     }
     #image{
         margin: 5px;
-        width: 60%;
         border: 1px solid #ddd;
         border-radius: 4px;
         padding: 5px;
@@ -116,6 +115,7 @@
     box-shadow: 0 0 2px 1px #CC5DE8;
    }
     .container{
+      scale: 0.7;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -146,8 +146,9 @@ button::first-letter {
 }
 
 .prop{
+  display: inline;
     padding: 0 1em;
-    display: flex;
+    
     justify-content: space-around;
 }
 #propName{
@@ -171,8 +172,7 @@ button:hover{
     color: #CC5DE8;
     box-shadow: 0 12px 16px 0 #CC5DE8, 0 17px 50px 0 #CC5DE8
 }
-</style>
-<style>
+
 
 /* body {
   min-height: 100vh;
@@ -315,6 +315,10 @@ button:hover{
   --button-text-color-hover: #ece8e1;
   --button-bits-color-hover: #ece8e1;
 }
+.details{
+  position: absolute;
+  top: 80px;
+}
 </style>
 <body>
 
@@ -336,7 +340,7 @@ button:hover{
 
     </div>
     <div class="prop">
-        <div>
+        <div class="details">
             <p id="propName">Property Name</p>
                <p id="OwnedBy">Owned by <p>
                 <p id="Desc">Desc </p>
